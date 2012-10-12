@@ -1,0 +1,5 @@
+C:\Users\KuP\Projects\MyContactsBook\MyContactsBook\bin\MyContactsBook.dll
+C:\Users\KuP\Projects\MyContactsBook\MyContactsBook\bin\MyContactsBook.pdb
+C:\Users\KuP\Projects\MyContactsBook\MyContactsBook\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KuP\Projects\MyContactsBook\MyContactsBook\obj\Debug\MyContactsBook.dll
+C:\Users\KuP\Projects\MyContactsBook\MyContactsBook\obj\Debug\MyContactsBook.pdb

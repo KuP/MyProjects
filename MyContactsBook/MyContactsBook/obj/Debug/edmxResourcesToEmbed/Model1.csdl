@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ContactsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="ContactsEntities1">
+    <EntitySet Name="Contacts" EntityType="ContactsModel.Contact" />
+  </EntityContainer>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

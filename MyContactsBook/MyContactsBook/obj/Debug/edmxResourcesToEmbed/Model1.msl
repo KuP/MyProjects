@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="ContactsModelStoreContainer" CdmEntityContainer="ContactsEntities1">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="ContactsModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="ContactsModel.Contact">
+        <ModificationFunctionMapping>
+          <UpdateFunction FunctionName="ContactsModel.Store.EditContact">
+            <ScalarProperty Name="Phone" ParameterName="Phone" Version="Current" />
+            <ScalarProperty Name="Address" ParameterName="Address" Version="Current" />
+            <ScalarProperty Name="LastName" ParameterName="LastName" Version="Current" />
+            <ScalarProperty Name="FirstName" ParameterName="FirstName" Version="Current" />
+            <ScalarProperty Name="ID" ParameterName="ID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="ContactsModel.Store.DeleteContact">
+            <ScalarProperty Name="ID" ParameterName="ID" />
+          </DeleteFunction>
+          <InsertFunction FunctionName="ContactsModel.Store.AddContact">
+            <ScalarProperty Name="Phone" ParameterName="Phone" />
+            <ScalarProperty Name="Address" ParameterName="Address" />
+            <ScalarProperty Name="LastName" ParameterName="LastName" />
+            <ScalarProperty Name="FirstName" ParameterName="FirstName" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
